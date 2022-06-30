@@ -1,0 +1,21 @@
+.nav-profile {
+  width: 14.5rem;
+  background: #fff;
+  box-shadow: 0px 2px 12px 7px rgba(18, 52, 77, 0.06);
+  border-radius: 4px;
+  overflow: hidden;
+
+  .nav-profile-header {
+    padding: 0.7rem 1rem;
+    border-bottom: 1px solid $border-color;
+  }
+
+  .nav-profile-body {
+    padding: 0.625rem 0;
+
+    .ant-menu-vertical > .ant-menu-item {
+      height: 2.1875rem;
+      line-height: 2.1875rem;
+    }
+  }
+}

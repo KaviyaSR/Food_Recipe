@@ -1,0 +1,128 @@
+html {
+  font-size: 16px;
+}
+body {
+  background: #ebeff3;
+  height: 100vh;
+  margin: 0;
+}
+@import '../node_modules/antd/dist/antd.css';
+@import 'assets/scss/global';
+@import 'assets/scss/utilities/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600;1,700&family=Smooch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600;1,700&family=Rubik+Moonrocks&family=Smooch&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.ant-layout-sider-collapsed {
+  .ant-menu-item {
+    justify-content: center;
+  }
+}
+.nav-bar {
+font-size: 20px;
+ color: #FFFF ;
+font-family:'Josefin Sans', sans-serif;
+justify-content: left;
+}
+
+.container{
+  height: 100vh; 
+  width: 100%;
+  background-image: url(./assets/images/fn.jpg);
+  // background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px ;
+}
+
+.container-img {
+  padding: 9rem 0 2rem !important;
+  color: black;
+  text-align: left;
+}
+
+.nav-type {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  // overflow: hidden;
+}
+
+.nav-list-type {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+
+}
+.nav-type li:hover{
+  color: #00DCDC;
+  transform: scale(1.2);
+  text-shadow: none;
+ }
+
+ .content-homepage{
+  //  float: right;
+   margin-top: 300px;
+   margin-left: 950px;
+
+   color: antiquewhite;
+
+   div{
+    font-size: 5rem;
+    font-family: 'Rubik Moonrocks', cursive;
+   }
+  p{
+    font-size: 2rem;
+    font-family:'Josefin Sans', sans-serif;
+    color: #00DCDC;
+  }
+
+ }
+
+ .content-button {
+  color: #00DCDC;
+  font-size: 2rem;
+ }
+
+ 

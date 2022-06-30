@@ -1,0 +1,247 @@
+.dashboard-page {
+  .chat-overview {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.875rem 0;
+    .overview-blocks {
+      width: calc(100% / 5);
+      padding: 1.5625rem 0;
+      color: #193346;
+      &:hover {
+        .icon {
+          filter: invert(61%) sepia(93%) saturate(3560%) hue-rotate(162deg)
+            brightness(98%) contrast(101%);
+        }
+      }
+      .img {
+        height: 1.25rem;
+        margin-bottom: 0.875rem;
+        .icon {
+          max-height: 100%;
+          transition: 0.1s;
+        }
+      }
+      .title {
+        font: 0.875rem SFProText-Semibold;
+        color: currentColor;
+
+        margin-bottom: 0.375rem;
+      }
+      .count {
+        font: 1.5rem SFProText-Bold;
+        color: currentColor;
+      }
+    }
+  }
+  .active-user-chart {
+    padding: 2.5rem 0 0px;
+    .chart-container {
+      height: 15.625rem;
+    }
+  }
+  .help-center-overview {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4.0625rem 0;
+    .overview-blocks {
+      width: 50%;
+      padding: 0.9375rem 1.5625rem;
+      &.invalid {
+        .count {
+          color: #e3593b;
+        }
+      }
+      &.resolved {
+        .count {
+          color: #06d755;
+        }
+      }
+      &.unsolved {
+        .count {
+          color: #ffd900;
+        }
+      }
+      .title {
+        font: 0.875rem SFProText-Semibold;
+        margin-bottom: 16px;
+        color: #193346;
+      }
+      .count {
+        font: 1.5rem SFProText-Bold;
+        color: #00aeef;
+      }
+    }
+  }
+  .user-overview {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.9375rem 0px;
+    .overview-blocks {
+      width: 33.3%;
+      padding: 0.9375rem 1.5625rem;
+      color: #193346;
+      &.suspend {
+        color: #ffd900;
+      }
+      &.blocked {
+        color: #e3593b;
+      }
+      .title {
+        font: 0.875rem SFProText-Semibold;
+        color: currentColor;
+        margin-bottom: 0.375rem;
+      }
+      .count {
+        font: 1.5rem SFProText-Bold;
+        color: currentColor;
+      }
+    }
+  }
+  .payment-overview {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.9375rem 0px;
+    .overview-blocks {
+      width: 50%;
+      padding: 0.9375rem 0.5rem;
+
+      &.failed {
+        color: #e3593b;
+        .title {
+          color: currentColor;
+        }
+        .count {
+          color: currentColor;
+        }
+      }
+      .title {
+        font: 0.875rem SFProText-Semibold;
+        color: #193346;
+        margin-bottom: 1rem;
+      }
+      .count {
+        font: 1.5rem SFProText-Bold;
+        color: #00aeef;
+        sub {
+          bottom: 0;
+          font: 0.875rem SFProText-Bold;
+        }
+      }
+    }
+  }
+  .installation-overview {
+    .label {
+      text-align: center;
+      padding: 2.5rem 0.9375rem 1.875rem;
+      color: #475867;
+      font: 0.875rem SFProText-Semibold;
+      border-bottom: 1px solid #ebeff3;
+    }
+    .installation-chart {
+      height: 250px;
+    }
+  }
+  .active-overview {
+    padding: 1.875rem 0;
+    .active-filter {
+      width: 50%;
+      margin-left: auto;
+      margin-bottom: 1.875rem;
+      label {
+        display: block;
+        font: 0.75rem SFProText-Semibold;
+        margin-bottom: 4px;
+      }
+      .ant-select {
+        width: 100%;
+        font: 0.875rem SFProText-Semibold;
+
+        .ant-select-selector {
+          height: auto;
+          border-radius: 4px;
+          border-color: #cfd7df;
+          color: #92a2b1;
+          box-shadow: 0px 1px 2px 0px rgba(24, 50, 71, 0.051) inset;
+          .ant-select-selection-item {
+            line-height: 32px;
+          }
+        }
+        .ant-select-arrow {
+          width: 10px;
+          height: 6px;
+        }
+      }
+    }
+    .hint {
+      color: rgba(18, 52, 77, 0.5);
+      text-align: center;
+      font: 0.75rem SFProDisplay-Regular;
+      margin-bottom: 20px;
+      strong {
+        font: 0.75rem SFProDisplay-Bold;
+      }
+    }
+    .active-progress-container {
+      .progress-container {
+        margin: 0.625rem 0;
+        .progress-header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 2px;
+          label,
+          .count {
+            font: 0.75rem SFProText-Semibold;
+            color: #193346;
+          }
+        }
+        .ant-progress {
+          .ant-progress-inner {
+            background-color: #cfd7df;
+            border-radius: 0;
+            .ant-progress-bg {
+              height: 6px !important;
+              background-color: #00aeef;
+              border-radius: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 991px) {
+  .dashboard-page {
+    .chat-overview .overview-blocks {
+      padding: 0.9375rem 0.5rem;
+      width: calc(100% / 3);
+    }
+    .user-overview .overview-blocks {
+      width: calc(100% / 3);
+      padding: 0.9375rem 0.5rem;
+    }
+    .payment-overview .overview-blocks {
+      width: calc(100% / 3);
+    }
+    .help-center-overview .overview-blocks {
+      width: calc(100% / 4);
+      padding: 0.9375rem 0.5rem;
+    }
+  }
+}
+@media only screen and (max-width: 479px) {
+  .dashboard-page {
+    .chat-overview .overview-blocks {
+      width: calc(100% / 2);
+    }
+    .user-overview .overview-blocks {
+      width: calc(100% / 2);
+    }
+    .payment-overview .overview-blocks {
+      width: calc(100% / 2);
+    }
+    .help-center-overview .overview-blocks {
+      width: calc(100% / 2);
+    }
+  }
+}
