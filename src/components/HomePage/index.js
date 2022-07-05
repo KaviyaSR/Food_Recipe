@@ -1,5 +1,4 @@
 import React from 'react';
-import Background from '../assets/images/background.jpg';
 import { Layout } from 'antd';
 import NavBar from './NavBar'
 import Content from './Content'

@@ -1,6 +1,6 @@
 import React from "react";
 import { Menu, Icon } from "antd";
-import { blob } from "d3-fetch";
+
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 function NavBar() {
